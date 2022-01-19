@@ -1,0 +1,456 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+     font-family: "Poppins",sans-serif;
+}
+
+/********************
+ Header Section css
+**********************/
+header{
+
+ position:absolute;
+ width: 100%;
+ z-index: 100;
+}
+.nav-item a{
+	color: white !important;
+	font-weight: 500;
+}
+.d-flex a{
+	color: white !important;
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 3px solid #FFE8C3;
+}
+.dropdown-menu li a{
+	color: black !important;
+}
+.header ul li a:hover{
+	color: #FFE8C3 !important;
+	
+}
+
+
+/********************
+Banner Section css
+**********************/
+.banner{
+	width: 100%;
+	padding: 80px 0px;
+	background: url(../image/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	position: relatives;
+	z-index: -999;
+
+
+}
+
+.banner-text{
+    margin-right: 80px;
+	height: 90vh;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+.banner-text h1{
+	color: white;
+	font-size: 60px;
+	font-weight: 600;
+	z-index: 10;
+	margin-bottom: 42px;
+
+}
+
+.banner-text button{
+	z-index: 99999;
+	padding: 19px 42px;
+	border: none;
+	background: #FFE8C3;
+
+}
+
+
+
+ button:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+
+}
+.overlay{
+	background: #001D38;
+	position: absolute;
+	opacity:0.3;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -9;
+}
+
+/*********************
+ Category section css
+ **********************/
+
+.category{
+	width: 100%;
+
+}
+.cat-box{
+	display: flex;
+	flex-grow: 1;
+}
+.item{
+	padding: 80px;
+	background: #dcdcdc !important;
+	opacity: 1;
+
+
+}
+.item .content{
+	margin:0px 42px;
+}
+.item .content h2{
+	font-size: 30px;
+	font-color:#001D38;
+	position: relative;
+}
+
+.item .content h2::before{
+	content: '';
+	width: 32px;
+	height: 3px;
+	position: absolute;
+	background: yellow;
+	left: -44px;
+	top: 50%;
+
+
+}
+.item .content p{
+	color: #dcdcdc;
+	
+}
+.item .serial{
+	color: #eee !important;
+	opacity: 8;
+	margin: 35px 0px;
+}
+.item .serial h1{
+	font-size: 160px;
+	font-weight:600 ;
+}
+
+.s1, .s2 ,.s3{
+	background: white;
+
+}
+
+
+.s1:hover .content h2, .s2:hover .content h2, .s3:hover .content h2{
+	color: white ;
+}
+.s1:hover .content p, .s2:hover .content p, .s3:hover .content p{
+	color: white ;
+}
+.s1:hover{
+	background:url(../image/cat-1.jpg) center no-repeat !important;	
+	position: relative;
+}
+.s2:hover{
+	background:url(../image/cat-2.jpg) center no-repeat !important;	
+	position: relative;
+}
+.s3:hover{
+	background:url(../image/cat-3.jpg) center no-repeat !important;	
+	position: relative;
+}
+
+.s1:hover::before,.s2:hover::before,.s3:hover::before{
+	content: '';
+	background: #001D38;
+	position: absolute;
+	opacity:0.1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/******************
+ Our Works css 
+ *****************/
+
+.our-works{
+	width: 100%;
+	background: #f5fbff;
+	padding: 220px 0px;
+}
+.our-works h3{
+	font-size: 50px;
+	font-weight: 500;
+	color: #001D38;
+	margin-bottom: 80px;
+
+}
+
+.works-item h3{
+	color: #596672;
+	margin-top: 12px;
+	margin-bottom: 28px;
+}
+.btn2{
+    color: #fff!important;
+    display: inline-block;
+    padding: 14px 47px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
+    border: 1px solid #001D38;
+    text-align: center;
+    background: #001d38;
+}
+.work-item .container{
+	margin-top: -300px;
+}
+.col-md-5{
+	display: flex !important;
+	align-items: center !important;
+}
+
+.work-item-con{
+	width: 100%;
+	padding: 45px 0px;
+}
+/*******************
+ About Section Css 
+ *****************/
+.about{
+	display: flex;
+	align-items: center;
+	margin-top: 80px;
+	margin-bottom: 10px;
+	width: 100%;
+	background: #f5fbff;
+}
+.left{
+
+}
+.right{
+
+	padding-left: 92px;
+	flex-basis: 35%;
+}
+.right h1{
+	font-size:50px;
+	font-weight: 500;
+	color: #001D38;
+}
+p{
+	color: #596672;
+	margin-top: 12px;
+	margin-bottom: 38px;
+}
+
+.about-stat{
+	padding: 0;
+	margin: 0;
+
+}
+
+.about-stat li{
+	list-style: none;
+	margin: 45px 0px;
+
+
+}
+
+.about-stat li h5{
+	color: #001D38; 
+
+}
+
+.about-stat li .line-1{
+	height: 3px;
+	width: 60%;
+	background:#001D38; 
+}
+.about-stat li .line-2{
+	height: 3px;
+	width: 65%;
+	background:#001D38; 
+}
+.about-stat li .line-3{
+	height: 3px;
+	width: 80%;
+	background:#001D38; 
+}
+.about-stat .percent-1{
+	padding-left: 125px;
+}
+.about-stat .percent-2{
+	padding-left: 175px;
+}
+.about-stat .percent-3{
+	padding-left: 275px;
+}
+
+/****************
+ Owner Section Css 
+ *******************/
+
+.owner{
+	background: url(../image/owner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center !important;
+	height: 60vh;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+
+
+}
+.owner p{
+	color:#001D38; 
+
+}
+
+.owner-img{
+	height: 60px;
+	width: 60px !important;
+	align-items: center;
+	line-height: 60px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	border: 1px solid black;
+	margin-left: 245px;
+	
+}
+
+
+/***************
+ Instagram Css
+ * *******************/
+
+
+.instagram{
+	margin: 120px 0px;
+	text-align: center;
+}
+ .insta-header h1{
+ 		margin-bottom: 60px;
+ 		color:#001D38;
+ 		font-weight: 500;
+ 		font-size: 60px;
+ }
+
+ .insta-img{
+ 	padding:0px 60px;
+ }
+
+ /****************
+  Footer Css
+  *****************/
+
+ .footer{
+ 	background: #001D38;
+ 	color: #FFFFFF;
+ 	height: 100vh;
+  }
+
+  .footer-deatils{
+  	margin-top: 70px;
+  }
+ .footer-header{
+ 	padding-top: 130px;
+ 	padding-bottom: 40px;
+ 	font-size: 18px;
+ }
+
+ .footer-right{
+ 	text-align: right;
+ }
+ .hr{
+ 	height: 0.2px;
+ 	width: 100%;
+ 	background:white;
+ 	margin-top: 40px;
+ 	margin-bottom: 80px;
+}
+
+ .footer ul li{
+ 	list-style: none;
+ 	line-height: 60px;
+ 	font-size: 13px;
+ 
+ }
+
+ .footer ul li a{
+ 	text-decoration: none;
+ 	color: white;
+ }
+
+ .footer ul li a:hover{
+ 	color: #FFE8C3;
+ }
+ .subscribe input{
+ 	border-radius: 30px;
+ 	height: 60px;
+ 	width: 100%;
+ 	background: #001D38;
+ 	border: 1 px solid #eee;
+ 	position: relative;
+ 	color: white;
+ 	padding-left: 10px;
+ 	margin-top: 20px;
+
+ }
+
+ .footer p{
+ 		 
+ 	color: white;
+ }
+ .services ul, .company ul{
+ 	padding: 0px;
+ }
+ .address p{
+ 	line-height: 45px;
+ }
+
+ .subscribe-btn{
+ 	border-radius: 30px;
+ 	height: 60px;
+ 	width: 120px;
+ 	background: #FFE8C3;
+ 	position: absolute;
+ 	right: 150px;
+ 	margin-top: 20px;
+
+ }
+  .subscribe ::placeholder{
+  	padding-left: 20px;
+  }
+  .subs{
+  	margin-top: 30px;
+  }
+  .copyright{
+  	text-align: center;
+  	padding-top: 60px;
+    font-size: 14px;
+    color: #919191;
+    font-weight: 400;
+
+  }
+
